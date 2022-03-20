@@ -40,6 +40,6 @@ io.on('connection', socket => {
   }, 1000)
 })
 
-server.listen(4000, () => {
+server.listen(process.env.PORT || 4000, () => {
   console.log('listening on *:4000')
 })
